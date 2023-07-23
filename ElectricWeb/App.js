@@ -1,11 +1,11 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { Login, Signup, Welcome , Waregister , WhatsappLogin} from "./screens";
+import { Login, Signup, Welcome, Waregister, WhatsappLogin, Addvehicle } from "./screens";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  
+
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -39,9 +39,18 @@ export default function App() {
             headerShown: false
           }}
         />
+
         <Stack.Screen
           name="Waregister"
           component={Waregister}
+          options={{
+            headerShown: false
+          }}
+        />
+
+        <Stack.Screen
+          name="Addvehicle"
+          component={Addvehicle}
           options={{
             headerShown: false
           }}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, TextInput } from 'react-native'
+import { Text, View, StyleSheet, TextInput, Pressable, Alert } from 'react-native'
 import Button from '../components/Button'
 
 export class Waregister extends Component {
@@ -19,9 +19,13 @@ export class Waregister extends Component {
                     }}
                 />
                 <Button
-
-                    title="Submit"
-                    onPress={() => Alert.alert('Button Pressed')}
+                    onPress={() => navigation.navigate('Addvehicle')}
+                    title="Sign Up"
+                    filled
+                    style={{
+                        marginTop: 18,
+                        marginBottom: 4,
+                    }}
                 />
             </View>
         )
