@@ -7,6 +7,18 @@ export class whatsappLogin extends Component {
         return (
             <View style={styles.center}>
                 <TextInput
+                    placeholder='Enter Mobile Number'
+                    style={{
+                        width: "100%",
+                        textAlign: 'center',
+                        border: '1px solid black',
+                        padding: '12px',
+                        borderRadius: '10px',
+                        marginBottom: '20px',
+                        marginVertical: '8',
+                    }}
+                />
+                <TextInput
                     placeholder='Enter OTP'
                     style={{
                         width: "100%",
